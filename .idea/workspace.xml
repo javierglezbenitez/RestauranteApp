@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b6b7c76-744f-467f-baa9-c2c0a098364b" name="Changes" comment="Todas las clases creadas">
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Dish.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/MenuType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/MenuType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Phone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/model/Restaurant.java" afterDir="false" />
+    <list default="true" id="3b6b7c76-744f-467f-baa9-c2c0a098364b" name="Changes" comment="Cada lista añadida">
+      <change beforePath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/ulpgc/is1/control/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +56,23 @@
       <option name="project" value="LOCAL" />
       <updated>1698001873565</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Atributos y metodos">
+      <option name="closed" value="true" />
+      <created>1698002211170</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698002211170</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Cada lista añadida">
+      <option name="closed" value="true" />
+      <created>1698002391703</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698002391703</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -77,7 +88,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Todas las clases creadas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Todas las clases creadas" />
+    <MESSAGE value="Atributos y metodos" />
+    <MESSAGE value="Cada lista añadida" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cada lista añadida" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
