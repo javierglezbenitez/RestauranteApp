@@ -13,7 +13,7 @@ public class Order {
 
 
 
-    public Order( int id, ArrayList<OrderItem> orderItems) {
+    public Order(int id, ArrayList<OrderItem> orderItems) {
         this.id = NEXT_ID++;
         this.orderItems = orderItems;
 
@@ -44,7 +44,7 @@ public class Order {
     }
 
 
-    void addItems(int quantity){
+    public void addItems(int quantity){
         OrderItem item = new OrderItem(quantity);
         orderItems.add(item);
     }
@@ -56,6 +56,8 @@ public class Order {
 
     public int price(Dish dish, OrderItem orderItem){
         return dish.getPrice() * orderItem.getQuantity();    }
+
+
 
     @Override
     public String toString() {

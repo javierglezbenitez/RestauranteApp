@@ -5,13 +5,15 @@ import java.util.ArrayList;
 public class OrderItem {
     private int quantity;
 
+    private Dish dish;
 
 
     public OrderItem(int quantity ) {
-
         this.quantity = quantity;
 
     }
+
+
 
     public int getQuantity() {
         return quantity;

@@ -1,7 +1,5 @@
 package org.ulpgc.is1.model;
 
-import org.ulpgc.is1.model.*;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,11 +8,13 @@ public class OrderManager {
     private ArrayList<Customer> customers;
     private ArrayList<Restaurant> restaurants;
     private ArrayList<Dish> dishes;
+    private ArrayList<Order> orders;
 
     public OrderManager() {
         customers = new ArrayList<>();
         restaurants = new ArrayList<>();
         dishes = new ArrayList<>();
+        orders = new ArrayList<>();
     }
 
 
@@ -37,6 +37,8 @@ public class OrderManager {
         if (!dishes.contains(dish)) dishes.add(dish);
 
     }
+
+
 
     public List<Customer> getCustomer(){
         return customers;
@@ -68,9 +70,19 @@ public class OrderManager {
     public void removeDishes(int index){
         dishes.remove(index);
     }
-    public void removeCustumer(int index){
+    public void removeCustomer(int index){
         customers.remove(index);
     }
 
+    //El order nos da error, esta indicado tambien en la clase main. No sabemos como hacerlo, aun asi ponemos lo que hicimos
+    //public void order(Customer customer, Restaurant restaurant, ArrayList<Integer> dishesId, ArrayList<Integer> quantities){
+      //  Order neworder = new Order();
+        //customer.addOrder(neworder);
+        //for(int i = 0; i <dishesId.size();i++){
+          //  int dishId = dishesId.get(i);
+            //int quantity = quantities.get(i);
+        //}
+        //restaurant.addOrder(neworder);
+    //}
 
 }

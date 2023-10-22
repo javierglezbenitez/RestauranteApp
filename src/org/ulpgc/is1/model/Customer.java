@@ -45,6 +45,10 @@ public class Customer {
         return address;
     }
 
+    public void addOrder(Order order){
+        orders.add(order);
+        if (!orders.contains(order)) orders.add(order);
+    }
     public void setAddress(String street,  int number, int postalCode, String city) {
         this.address = new Address( street,   number,  postalCode,  city);
 

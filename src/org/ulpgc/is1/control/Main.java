@@ -20,6 +20,8 @@ public class Main {
         ArrayList<OrderItem> orderItem2 = new ArrayList<>();
         ArrayList<Order> orders1 = new ArrayList<>();
         ArrayList<Order> orders2 = new ArrayList<>();
+        Dish dish1 = new Dish("Pescado", "Troceado con alioli", 11);
+        Dish dish2 = new Dish("Carne", "Con papas y arroz", 16);
         OrderItem orderItem = new OrderItem(12);
         OrderItem orderItem_ = new OrderItem(5);
         Order order = new Order(1, orderItem1);
@@ -39,8 +41,6 @@ public class Main {
         ArrayList<Dish> dishes2 = new ArrayList<>();
         ArrayList<Menu> menus1 = new ArrayList<>();
         ArrayList<Menu> menus2 = new ArrayList<>();
-        Dish dish1 = new Dish("Pescado", "Troceado con alioli", 11);
-        Dish dish2 = new Dish("Carne", "Con papas y arroz", 16);
         Menu menu1 = new Menu("Grande", MenuType.Kids, dishes1);
         Menu menu2 = new Menu("Mediano", MenuType.Daily, dishes2);
         dishes1.add(dish1);
@@ -68,6 +68,31 @@ public class Main {
         orderManager.addDish("Sopa", "Con verduras", 5);
         orderManager.addDish("Bistec", "Con  judias", 20);
 
+        // Imprimir por pantalla los datos del primer restaurante:
+        System.out.println(orderManager.getRestaurant().get(0).toString());
+
+        //Imprimimos un restaurant con telefono invalido para comprobar que funciona el metodo isValid()
+        System.out.println(orderManager.getRestaurant().get(1).toString());
+
+        //Imprimir por pantalla los datos del segundo cliente.
+        System.out.println(orderManager.getCustomer().get(1).toString());
+
+        //Imprimir por pantalla los datos del tercer plato.
+        System.out.println(orderManager.getDish().get(2).toString());
+
+
+        //Crear un pedido por parte del primer cliente, al primer restaurante, que incluya los dos últimos platos del catálogo.
+        //Este apartado nos da un error que no supimos corregir, no obstante ponemos lo que hicimos.
+        //orderManager.order(customer1, restaurant1, dishes1,orderItem1 );
+
+        //Borrar el segundo cliente.
+        orderManager.removeCustomer(1);
+
+        //Imprimir por pantalla el número de clientes.
+        System.out.println(orderManager.countCustomer());
+
+        //Imprimir por pantalla el primer pedido del primer cliente, incluyendo precio total del pedido.
+        System.out.println(orderManager.getCustomer().get(0).getOrders().get(0).toString() + ", Precio=" + orderManager.getCustomer().get(0).getOrders().get(0).price( dish1, orderItem));
 
 
 

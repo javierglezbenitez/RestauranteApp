@@ -18,6 +18,11 @@ public class Restaurant {
         this.orders = orders;
         this.menus = menus;
     }
+    public void addOrder(Order order){
+
+        orders.add(order);
+        if (!orders.contains(order)) orders.add(order);
+    }
 
     public ArrayList<Order> getOrders() {
         return orders;
